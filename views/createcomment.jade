@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1= 'Create Comment'
+  div
+  form(action='/api/comment',method='post')
+    div(data-role='fieldcontain')
+        label(for='name') Username
+           input(id='username',type='text',value='',placeholder='Username',name='username')
+    div(data-role='fieldcontain')
+        label(for='body') Body
+           input(id='zipcode',type='text',value='',placeholder='Body',name='body')
+    div(data-role='fieldcontain')
+      input(type='submit',value='Create comment',data-transition='fade', data-theme='c')

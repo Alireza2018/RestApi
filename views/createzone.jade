@@ -1,0 +1,14 @@
+
+
+block content
+  h1= 'Create Zone'
+  div
+  form(action='/api/zone',method='post')
+    div(data-role='fieldcontain')
+        label(for='name') name
+           input(id='name',type='text',value='',placeholder='Name',name='name')
+    div(data-role='fieldcontain')
+        label(for='zipcode') Zip Code
+           input(id='zipcode',type='text',value='',placeholder='Zop Code',name='zipCodes')
+    div(data-role='fieldcontain')
+      input(type='submit',value='Create Zone',data-transition='fade', data-theme='c')
